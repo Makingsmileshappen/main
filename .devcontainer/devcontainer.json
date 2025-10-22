@@ -1,0 +1,30 @@
+{
+  "name": "MSH UII Protocol Development Core",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  
+  "features": {
+    // Add any necessary features here, e.g., 'gh cli' is already included in universal
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+
+  // Runs the script to clone all necessary repositories after the environment is set up
+  "postCreateCommand": "./.devcontainer/setup-repos.sh",
+
+  // Ensures we open the multi-root workspace file
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.exclude": {
+          "**/.git": true,
+          "**/node_modules": true
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
