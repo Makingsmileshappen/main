@@ -1,0 +1,27 @@
+{
+  "name": "MSH UII Protocol Development Core",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+
+  "postCreateCommand": "./.devcontainer/setup-repos.sh",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.exclude": {
+          "**/.git": true,
+          "**/node_modules": true
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
