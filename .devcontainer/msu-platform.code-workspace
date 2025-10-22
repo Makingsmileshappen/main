@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "uii-protocol-core"
+		},
+		{
+			"path": "patient-portal"
+		},
+		{
+			"path": "partner-reporting"
+		},
+		{
+			"path": "documentation"
+		}
+	],
+	"settings": {}
+}
